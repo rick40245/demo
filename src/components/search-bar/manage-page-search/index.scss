@@ -1,0 +1,94 @@
+.manage-search-selection {
+    background-color: #fff;
+    position: relative;
+    .search-filtered {
+      .search-filtered-div {
+        min-width: 17%;
+        height: 100%;
+        border-right: groove;
+        border-color: #f0f0f05e;
+        border-width: 1px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        &:focus{
+          +div{
+            display: flex;
+          }
+        }
+        .search-filtered-png {
+          background: url(./images/chevron.png);
+          margin-right: 10px;
+          height: 2vh;
+          width: 16px;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          background-size: contain;
+        }
+        .search-filtered-word {
+          white-space: nowrap;
+          padding: 0px 10px;
+          flex-grow: 0;
+          font-family: NotoSans;
+          font-size: 20px;
+          letter-spacing: 0.48px;
+          text-align: left;
+          color: #666;
+        }
+      }
+      .search-filtered-dropdown {
+        padding-top: 0;
+        margin-top: 1px;
+        z-index: 20;
+        background-color: white;
+        .search-filtered-option {
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          align-self: stretch;
+          flex-grow: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 8px 16px;
+          background-color: #fff;
+          font-size: 20px;
+          overflow-wrap: anywhere;
+          &:hover {
+            background-color: #d8eeee;
+            color: #005f5f;
+          }
+        }
+      }
+    }
+  
+    .search-content{
+      width: 70%;
+    // 搜尋框
+      .search-selection-content{
+        border: none;
+        height: 100%;
+        width: 100%;
+        margin-left: 16px;
+        font-size:20px;
+        &:focus-visible{
+            outline: none;
+            border: none;
+            &:focus-visible{
+                +div {
+                    display: flex;
+                }
+            }
+        }
+        &:active{
+            outline: none;
+        }
+      }
+    }
+  
+    .search-icon-div {
+      display: flex;
+    }
+  }

@@ -1,0 +1,157 @@
+.home-search-selection {
+  background-color: #fff;
+  position: relative;
+  .search-filtered {
+    flex-grow: 1;
+    .search-filtered-div {
+      min-width: 17%;
+      height: 100%;
+      border-right: groove;
+      border-color: #ccc;
+      border-width: 1px;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      &:focus{
+        +div{
+          display: flex;
+        }
+      }
+      .search-filtered-png {
+        background: url(./images/chevron.png);
+        margin: 1% 1.5% 1% 1.5%;
+        height: 2vh;
+        width: 2vh;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: contain;
+      }
+      .search-filtered-word {
+        padding: 0% 5% 0% 17%;
+        flex-grow: 0;
+        font-family: NotoSans;
+        font-size: 20px;
+        letter-spacing: 0.48px;
+        text-align: left;
+        color: #666;
+      }
+    }
+    .search-filtered-dropdown {
+      padding-top: 0;
+      margin-top: 1px;
+      z-index: 20;
+      background-color: white;
+      .search-filtered-option {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        align-self: stretch;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px 16px;
+        background-color: #fff;
+        font-size: 20px;
+        overflow-wrap: anywhere;
+        &:hover {
+          background-color: #d8eeee;
+          color: #005f5f;
+        }
+      }
+    }
+  }
+
+  .search-content{
+    flex-grow: 6;
+    .search-selection-dropdown {
+      padding: 0;
+      margin-top: 1px;
+      z-index: 20;
+      background-color: white;
+      .search-selection-loading-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .search-selection-item-wrapper {
+        max-height: 250px;
+        overflow-y: scroll;
+        margin:8px 0px 8px 0px;
+        :hover {
+          background-color: #f3f3f3;
+        }
+        .search-selection-item {
+          span {
+            max-width: 300px;
+            height: 26px;
+            flex-grow: 0;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: 0.48px;
+            text-align: left;
+            color: #000;
+            overflow:hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .search-selection-advanced {
+        .search-selection-advanced-span {
+          height: 26px;
+          flex-grow: 0;
+          font-family: NotoSans;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.6;
+          letter-spacing: 0.48px;
+          text-align: left;
+          color: #007d7d;
+        }
+        .search-selection-advanced-arrow {
+          background: url(./images/chevron@3x_1.png);
+          height: 2vh;
+          width: 2vh;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          background-size: contain;
+        }
+      }
+    }
+
+  // 搜尋框
+    .search-selection-content{
+      border: none;
+      height: 100%;
+      width: 100%;
+      margin-left: 16px;
+      font-size:20px;
+      &:focus-visible{
+          outline: none;
+          border: none;
+          &:focus-visible{
+              +div {
+                  display: flex;
+              }
+          }
+      }
+      &:active{
+          outline: none;
+      }
+    }
+  }
+
+  .search-icon-div {
+    display: flex;
+    flex-grow: 1;
+  }
+}

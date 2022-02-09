@@ -1,0 +1,40 @@
+.style-input {
+  .setinput {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    border: solid 1px#aaaaaa;
+    font-size: 16px;
+    outline: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  .addmenu {
+    &-wrapper {
+      position: relative;
+      .addmenu-input {
+        &-warning-box {
+          border: 2px solid #dc3500;
+        }
+        &-icon {
+          width: 24px;
+          height: 24px;
+          background-image: url("../../../../assets/images/error-o.png");
+          position: absolute;
+          right: 8px;
+          top: 16px;
+        }
+        &-showing {
+          color: #dc3500;
+          line-height: 1.6;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

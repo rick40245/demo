@@ -1,0 +1,23 @@
+.icon-div{
+    .itemIcon{
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .icon-file{
+        background-image: url(./images/file-alt@2x_1.png);
+    }
+    .icon-cog{
+        background-image: url(./images/cog@2x.png);
+    }
+    .icon-folder{
+        background-image: url(./images/folder@2x.png);
+    }
+    .icon-link{
+        background-image: url(./images/link@2x_1.png);
+    }
+    .icon-user{
+        background-image: url(./images/user@2x.png);
+    }
+}
