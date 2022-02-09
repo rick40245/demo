@@ -1,0 +1,139 @@
+.login-page {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+
+  .login-ctbc-eamp-img {
+    background: url(../../assets/images/ctbc-eamp.png);
+    width: 18vw;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  .login-card {
+    width: 40vw;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3% 2%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    border: solid 1px #ccc;
+    background-color: #fff;
+    z-index: 1000;
+    margin-top: 1%;
+  }
+
+  .login-row {
+    width: 35vw;
+    height: auto;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+    padding: 0;
+  }
+
+  span {
+    width: 20%;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: #444;
+    font-weight: 500;
+  }
+
+  .login-textfield {
+    height: 50%;
+    align-self: stretch;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 5% 3%;
+    border: solid 1px #aaa;
+  }
+
+  .login-textfield:focus{
+    border: solid 1px #007d7d;
+  }
+
+  .login-passwd-relative{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .login-eye-img {
+    background:url(./images/eye@3x.png);
+    width: 3vw;
+    height: 5vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -27%;
+    bottom: 0%;
+    right: 1%;
+    margin: auto;
+    cursor: pointer;
+  }
+
+
+  .login-buttonlg {
+    width: 43%;
+    height: 20%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 3%;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ed7100;
+    color: white;
+    margin-top: 4%;
+    cursor: pointer;
+  }
+  
+  .login-buttonlg:hover {
+    background-color: #da4100;
+  }
+
+  .login-buttonlg:active {
+    background-color: #aa2900;
+  }
+
+  .login-background-img {
+    background-image: url(./images/login_background.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0px;
+    background-position: bottom;
+  }
+}

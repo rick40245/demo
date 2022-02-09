@@ -1,0 +1,58 @@
+.menuContent{
+    &-wrapper{
+        padding: 8px 24px;
+        &-content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-top: 8px;
+            padding-top: 8px;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            &-type{
+                flex-grow: 1;
+                width: 19%;
+                &-dropDown{
+                    margin-top: 2px;
+                }
+            }
+            &-kind{
+                flex-grow: 1;
+                &-radioButton{
+                    height: 60px;
+                    margin-top: 2px;
+                }
+            }
+        }
+        &-content_down{
+            margin-bottom: 16px;
+        }
+        &-richText{
+            margin-top: 6px;
+        }
+        &-warning{
+            color: #dc3500;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        .richText-warning{
+            border: solid;
+            border-width: 2px;
+            border-color: red;
+        }
+    }
+    &-buttonFooter{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        &-close{
+            height: fit-content;
+            width: 15vw;
+        }
+        &-add{
+            height: fit-content;
+            width: 15vw;
+        }
+    }
+}
