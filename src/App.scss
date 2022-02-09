@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+  font-family: 'Noto Sans', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color:rgba(155,155,155,0.5) transparent;
+}
+
+*::-webkit-scrollbar{
+  width: 8px;
+  background: #fff;
+  padding-right:10px;
+}
+
+*::-webkit-scrollbar-track{
+  background: #e3e3e3;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #aaaaaa;
+  border-radius: 20px;
+  border: transparent;
+}
+body {
+  background-color: #f3f3f3;
+  overflow-y: overlay;
+}
